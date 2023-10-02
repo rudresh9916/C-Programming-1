@@ -1,0 +1,755 @@
+----->C Program to Find Area and Circumference of Circle
+
+
+#include <stdio.h>
+#define PI 3.14
+
+int main() {
+    float radius, area, circumference;
+
+    printf("Enter the radius of the circle: ");
+    scanf("%f", &radius);
+
+    area = PI * radius * radius;
+    circumference = 2 * PI * radius;
+
+    
+    printf("Area of the circle: %f square units\n", area);
+    printf("Circumference of the circle: %f units\n", circumference);
+
+    return 0;
+}
+
+
+-------> ASCII Character Value
+
+
+#include<stdio.h>
+#include <stdio.h>
+
+int main() {
+    char character;
+    printf("Enter a character: ");
+    scanf("%c", &character);
+
+    
+    printf("ASCII value of '%c' is %d\n", character, character);
+
+    return 0;
+}
+
+------------>CALCULATE THE AREA OF TRIANGLE
+#include <stdio.h>
+
+int main() {
+    float base, height, area;
+    printf("enter the base of triangle");
+    scanf("%f", &base);
+    printf("enter the height of triangle");
+    scanf("%f", &height);
+    area = 0.5 *  base * height;
+    printf("area of triangle: %f square units\n", area);
+    return 0;
+}
+
+-------->TO CALCULATE INTEREST 
+#include<stdio.h>
+int main(){
+    float principle, rate, time, intrest;
+    printf("Enter the principle amount:");
+    scanf("%f", &principle);
+    printf("Enter rate:");
+    scanf("%f", &rate);
+    printf("Enter time taken:");
+    scanf("%f", &time);    
+intrest= (principle * rate *time);
+    printf("intrest is: %f\n", intrest);
+    return 0;
+}
+
+
+
+-------->CALCULATING PERCENTAGES
+#include<stdio.h>
+int main(){
+
+    int subject1, subject2, subject3, subject4, subject5;
+    int totalmarks, percentage;
+
+
+    printf("enter subject1 marks");
+    scanf("%d", &subject1);
+    printf("enter subject2 marks");
+    scanf("%d", &subject2);
+    printf("enter subject3 marks");
+    scanf("%d", &subject3);
+    printf("enter subject4 marks");
+    scanf("%d", &subject4);
+    printf("enter subject5 marks");
+    scanf("%d", &subject5);
+
+    totalmarks = subject1 + subject2 + subject3 + subject4 + subject5;
+    percentage = (totalmarks / (5*100)) * 100;
+    printf("PERCENTAGE AQQUIRED : %d\n", percentage);
+    return 0;
+}
+
+
+
+
+
+------>CELCIUS TO FARENHIET
+#include<stdio.h>
+int main()
+{
+int celcius, farenhiet;
+    printf("enter temperature in celcius");
+    scanf("%d", &celcius);
+    farenhiet = (celcius * 9/5) + 32;
+    printf("%2d\n is equal to %2d\n farenheit\n", celcius, farenhiet);
+    return 0;
+    }
+
+
+---------->SIZE OF DIFFRENT DATA TYPES IN C
+#include<stdio.h>
+int main(){
+    printf("size of int: %1u bytes\n", sizeof(int));
+    printf("size of char: %1u bytes\n", sizeof(char));
+    printf("size of float: %1u bytes\n", sizeof(float));
+    printf("size of double: %1u bytes\n", sizeof(double));
+    printf("size of long int: %1u bytes\n", sizeof(long int));
+    printf("size of long long int: %1u bytes\n", sizeof(long long int));
+    return 0;
+}
+
+
+--------------->TO CHECK WETHER THE NUMBER IS POSITIVE OR NEGATIVE
+#include<stdio.h>
+int main(){
+    int number;
+    printf("enter the number");
+    scanf("%d", &number);
+    if (number > 0)
+    {
+        printf("number is positive");
+    }
+    else if (number < 0)
+    {
+        printf("number is negative");
+    }
+    else{
+        printf("number is 0");
+    }
+    return 0;
+}
+
+
+
+
+----------------> TO CHECK WHETHER THE CHARACTER IS VOWEL OR NOT
+#include<stdio.h>
+int main(){
+    char ch;
+    printf("enter the character");
+    scanf("%c", &ch);
+    switch(ch){
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+        case 'A':
+        case 'E':
+        case 'I':
+        case 'O':
+        case 'U':
+        printf("%c is a vowel.\n", ch);
+        break;
+    default:
+        printf("%c is NOT a vowel.\n ", ch);
+
+            }
+            return 0;
+
+
+
+
+
+----->FACTORIAL USING A LONG LOOP
+#include <stdio.h>
+int main() {
+    int n;
+    unsigned long long factorial = 1; 
+
+    // Input a positive integer from the user
+    printf("Enter a positive integer: ");
+    scanf("%d", &n);
+
+    if (n < 0) {
+        printf("Factorial is not defined for negative numbers.\n");
+    } else {
+        for (int i = 1; i <= n; i++) {
+            factorial *= i;
+        }
+        printf("Factorial of %d = %llu\n", n, factorial);
+    }
+    return 0;
+}\
+
+
+----------->ASSIGN POWERS TO THE INTEGERS
+#include <stdio.h>
+
+int main() {
+    int n;
+    
+    // Input an integer from the user
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+
+    // Initialize variables to store the powers
+    int power1 = n;
+    int power2 = n * n;
+    int power3 = n * n * n;
+
+    // Display the first three powers
+    printf("%d^1 = %d\n", n, power1);
+    printf("%d^2 = %d\n", n, power2);
+    printf("%d^3 = %d\n", n, power3);
+
+    return 0;
+}
+
+
+----->VOTING
+#include<stdio.h>
+int main(){
+    int age;
+    printf("enter age of person");
+    scanf("%d", &age);
+
+    if (age>18)
+    printf("person is eligible to vote");
+    else
+    printf("person is not eligible to vote");
+    return 0;
+}
+    
+
+
+---------> FIND GREATER NUMBER
+#include<stdio.h>
+int main(){
+    int num1, num2;
+    printf("enter the first number:");
+    scanf("%d", &num1);
+     
+    printf("enter the second number:");
+    scanf("%d", &num2);
+     if (num1 > num2){
+     printf("num1 is greater");}
+     else if (num2 > num1){
+     printf("num2 is greater");}
+     else {
+     printf("both numbers are equal");}
+     return 0;
+}
+
+
+------>CHECK WHETHER NUMBER IS ODD OR EVEN
+#include<stdio.h>
+int main(){
+   int num;
+   printf("enter your number:");
+   scanf("%d", &num);
+   if (num % 2 ==0){
+    printf("number is even");}
+    else  {
+        printf("number is odd");}
+return 0;
+}
+
+
+
+
+---------->TO TELL WHETHER THE YEAR IS LEAP YEAR OR NOT
+#include<stdio.h>
+int main(){
+int year;
+printf("enter the year");
+scanf("%d", &year);
+
+ if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)){ 
+ printf("year is a leap year");}
+ else{
+    printf("year is not a leap year");}
+return 0;
+ }
+   
+
+
+----------->CHECKING MONTHS USING IF-ELSE
+#include <stdio.h>
+
+int main() {
+    int day, month, year;
+    printf("Enter the date (1-31): ");
+    scanf("%d", &day);
+
+    printf("Enter the month (1-12): ");
+    scanf("%d", &month);
+
+    printf("Enter the year: ");
+    scanf("%d", &year);
+
+    if (month < 1 || month > 12) {
+        printf("Invalid month. Please enter a month between 1 and 12.\n");
+    }
+    else if (day < 1 || (day > 31 && (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)) ||
+                          (day > 30 && (month == 4 || month == 6 || month == 9 || month == 11)) ||
+                          (day > 29 && month == 2 && ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)))) {
+        printf("Invalid day for the given month.\n");
+    }
+
+    else if (year < 1) {
+        printf("Invalid year. Please enter a positive year.\n");
+    }
+
+    else {
+        printf("The date %d-%d-%d is a valid date.\n", day, month, year);
+    }
+
+    return 0;
+}
+
+
+
+
+---------------->CODE TO FIND GREATEST BW 3 NUMBERS
+#include<stdio.h>
+int main(){
+    int num1, num2, num3;
+    printf("enter three numbers:");
+    scanf("%d, %d, %d", &num1, &num2, &num3 );
+    if(num1 >= num3){
+       if(num1 >= num3){
+          printf("%d is the largest number\n", &num1);
+        } else {
+            printf("%d is the largest number\n", &num3);
+        }
+   } else {
+        if(num2 >= num3){
+        printf("%d is the largest number\n", &num2);
+        }
+   }
+return 0;
+}
+
+
+
+
+-------------->REVERSE A NUMBER USING FOR LOOP
+#include <stdio.h>
+
+int main() {
+    int number, reversedNumber = 0, remainder;
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+    for (; number != 0; number /= 10) {
+        remainder = number % 10;
+        reversedNumber = reversedNumber * 10 + remainder;
+    }
+
+    printf("Reversed number: %d\n", reversedNumber);
+
+    return 0;
+}
+
+
+------------->ARMSTRONG NUMBER USING FOR AND WHILE LOOP
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int number, originalNumber, remainder, result = 0, n = 0;
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+
+    originalNumber = number;
+
+    while (originalNumber != 0) {
+        originalNumber /= 10;
+        ++n;
+    }
+
+    originalNumber = number;
+
+    
+    while (originalNumber != 0) {
+        remainder = originalNumber % 10;
+        result += pow(remainder, n);
+        originalNumber /= 10;
+    }
+
+    
+    if (result == number) {
+        printf("%d is an Armstrong number.\n", number);
+    } else {
+        printf("%d is not an Armstrong number.\n", number);
+    }
+
+    return 0;
+}
+
+
+
+Using While Loop:
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int number, originalNumber, remainder, result = 0, n = 0;
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+
+    originalNumber = number;
+    for (; originalNumber != 0; originalNumber /= 10) {
+        ++n;
+    }
+
+    originalNumber = number;
+    while (originalNumber != 0) {
+        remainder = originalNumber % 10;
+        result += pow(remainder, n);
+        originalNumber /= 10;
+    }
+    if (result == number) {
+        printf("%d is an Armstrong number.\n", number);
+    } else {
+        printf("%d is not an Armstrong number.\n", number);
+    }
+
+    return 0;
+}
+
+
+
+------------->SUM OF NATURAL NUMBERS USING WHILE LOOP
+#include<stdio.h>
+int main() {
+    int n, sum = 0;
+    printf("Enter a positive integer 'n': ");
+    scanf("%d", &n);
+    if (n < 1) { 
+        printf("Please enter a positive integer.\n");
+    } else {
+        int i = 1;
+
+        while (i <= n) {
+            sum += i;
+            i++;
+        }
+
+        printf("The sum of natural numbers from 1 to %d is %d.\n", n, sum);
+    }
+    return 0;
+
+
+--------->MULTIPLICATION TABLE OF ANY INTEGER
+#include<stdio.h>
+int main(){
+    int N;
+    printf("Enter The number :");
+    scanf("%d", &N);
+    printf("MULTIPLICATION TABLE OF %d", &N);
+    for (int i=1; i <= 10; i++){
+        printf("%d * %d = %d\n", N, i, N * i); 
+    }
+    return 0;
+}
+
+---------------->FIBONACCI SERIES IN C USING WHILE LOOP
+#include <stdio.h>
+
+int main() {
+    int n, first = 0, second = 1, next, i;
+    printf("Enter the number of terms in the Fibonacci series: ");
+    scanf("%d", &n);
+    if (n == 1) {
+        printf("Fibonacci Series: %d\n", first);
+    } else if (n == 2) {
+        printf("Fibonacci Series: %d, %d\n", first, second);
+    } else {
+        printf("Fibonacci Series: %d, %d, ", first, second);
+        i = 3;
+
+        do {
+            next = first + second;
+
+            printf("%d, ", next);
+
+            first = second;
+            second = next;
+
+            i++;
+        } while (i <= n);
+
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+
+-----------> C PROGRAM  GCD OF TWO NUMBERS USING LOOP
+#include <stdio.h>
+int findGCD(int a, int b) {
+    int temp;
+    while (b != 0) {
+        temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+
+int main() {
+    int num1, num2;
+
+    printf("Enter the first number: ");
+    scanf("%d", &num1);
+
+    printf("Enter the second number: ");
+    scanf("%d", &num2);
+
+    int gcd = findGCD(num1, num2);
+
+    printf("The GCD of %d and %d is %d\n", num1, num2, gcd);
+
+    return 0;
+}
+
+
+----------------->C PROGRAM TO FIND LCM OF TWO NUMBERS
+
+
+#include <stdio.h>
+int findGCD(int a, int b) {
+    int temp;
+    while (b != 0) {
+        temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+int findLCM(int a, int b) {
+    return (a * b) / findGCD(a, b);
+}
+
+int main() {
+    int num1, num2;
+
+    printf("Enter the first number: ");
+    scanf("%d", &num1);
+
+    printf("Enter the second number: ");
+    scanf("%d", &num2);
+    int lcm = findLCM(num1, num2);
+    printf("The LCM of %d and %d is %d\n", num1, num2, lcm);
+
+    return 0;
+}
+
+
+
+
+---------->C PROGRAM TO REVERSE A NUMBER USING FOR LOOP
+#include <stdio.h>
+
+int main() {
+    int number, reversedNumber = 0, remainder;
+
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+
+    int originalNumber = number;  
+    for (; number != 0; number /= 10) {
+        remainder = number % 10;
+        reversedNumber = reversedNumber * 10 + remainder;
+    }
+
+    printf("Original number: %d\n", originalNumber);
+    printf("Reversed number: %d\n", reversedNumber);
+
+    return 0;
+}
+
+
+--------------> PALINDROME
+
+#include<stdio.h>
+int main(){
+    int n1,rev=0,r,num;
+    printf("The number is ");
+    scanf("%d",&n1);
+    num=n1;
+    while(num>0){
+         r=num%10;
+         num=num/10;
+         rev=10*rev+r;
+    }
+    if(rev == n1)
+    {
+        printf("Number is palidrome");
+    }else{
+        printf("the reverse is %d",rev);
+    }
+    return(0);
+}
+
+
+------------>COUNT THE NUMBER OF DIGITS OF AN INTEGER USING WHILE LOOP 
+#include <stdio.h>
+
+int main() {
+    int num, count = 0;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+    if (num < 0) {
+        num = -num;
+    }
+    while (num != 0) {
+        num /= 10;
+        count++;
+    }
+    printf("Number of digits: %d\n", count);
+
+    return 0;
+}
+
+
+
+-------------->C PROGRAM TO  PRINT DAY OF WEEK NAME USING SWITCH CAS
+#include <stdio.h>
+
+int main() {
+    int day;
+    printf("Enter a day of the week (1-7): ");
+    scanf("%d", &day);
+    switch (day) {
+        case 1:
+            printf("Monday\n");
+            break;
+        case 2:
+            printf("Tuesday\n");
+            break;
+        case 3:
+            printf("Wednesday\n");
+            break;
+        case 4:
+            printf("Thursday\n");
+            break;
+        case 5:
+            printf("Friday\n");
+            break;
+        case 6:
+            printf("Saturday\n");
+            break;
+        case 7:
+            printf("Sunday\n");
+            break;
+        default:
+            printf("Invalid input! Please enter a number between 1 and 7.\n");
+            break;
+    }
+
+    return 0;
+}
+
+-------------> C PROGRAM TO MAKE A SIMPLE CALCULATOR USING SWITCH CASE
+#include <stdio.h>
+
+int main() {
+    char operator;
+    double num1, num2, result;
+    printf("Enter an operator (+, -, *, /): ");
+    scanf(" %c", &operator);
+
+    printf("Enter two numbers: ");
+    scanf("%lf %lf", &num1, &num2);
+    switch (operator) {
+        case '+':
+            result = num1 + num2;
+            break;
+        case '-':
+            result = num1 - num2;
+            break;
+        case '*':
+            result = num1 * num2;
+            break;
+        case '/':
+            if (num2 != 0) {
+                result = num1 / num2;
+            } else {
+                printf("Error: Division by zero is not allowed.\n");
+                return 1; // Exit with an error code
+            }
+            break;
+        default:
+            printf("Error: Invalid operator.\n");
+            return 1; // Exit with an error code
+    }
+    printf("Result: %.2lf %c %.2lf = %.2lf\n", num1, operator, num2, result);
+
+    return 0;
+}
+
+
+
+
+------------> C PROGRAM TO FIND THE GRADE OF A STUDENT USING SWITCH CASE
+#include <stdio.h>
+
+int main() {
+    int score;
+    printf("Enter the student's score (0-100): ");
+    scanf("%d", &score);
+
+    char grade;
+
+    if (score >= 0 && score <= 100) {
+        switch (score / 10) {
+            case 10:
+            case 9:
+                grade = 'A';
+                break;
+            case 8:
+                grade = 'B';
+                break;
+            case 7:
+                grade = 'C';
+                break;
+            case 6:
+                grade = 'D';
+                break;
+            default:
+                grade = 'F';
+                break;
+        }
+
+        printf("Grade: %c\n", grade);
+    } else {
+        printf("Invalid score! Please enter a score between 0 and 100.\n");
+    }
+
+    return 0;
+}
+
+
+
+
+
